@@ -4,32 +4,45 @@ $(document).ready(function() {
     var cols = 5;
     var initialImage = 'images/chevre.jfif';
     var images = [
-        'images/cheval.png', 'images/snake.jfif', 'images/image4.jpg', 'images/image5.jpg',
-        'images/image6.jpg', 'images/image7.jpg', 'images/image8.jpg', 'images/image9.jpg',
-        'images/image10.jpg', 'images/image11.jpg', 'images/image12.jpg', 'images/image13.jpg',
-        'images/image14.jpg', 'images/image15.jpg', 'images/image16.jpg'
+        'images/manu.jpg', 'images/cheval.png', 'images/remi.jpg', 'images/joint.jpg',
+        'images/dents.jpg', 'images/tower.jpg', 'images/snake.jfif', 'images/car.jpg',
+        'images/jim.jfif', 'images/wario.jfif', 'images/civil.jfif', 'images/indiana.png',
+        'images/digi.jpeg', 'images/inge.jpg', 'images/super.jfif'
     ];
     var images_jeu = [
-        'images/snake.jfif', 'images/chevre.jfif', 'images/image4.jpg', 'images/image5.jpg',
-        'images/image6.jpg', 'images/image7.jpg', 'images/image8.jpg', 'images/image9.jpg',
-        'images/image10.jpg', 'images/image11.jpg', 'images/image12.jpg', 'images/image13.jpg',
-        'images/image14.jpg', 'images/image15.jpg', 'images/image16.jpg'
+        'images/smash.jfif', 'images/hotline.jpg', 'images/mario.jpg', 'images/micro.jfif',
+        'images/goldeneye.jfif', 'images/towerfall.jfif', 'images/simple.png', 'images/street.jfif',
+        'images/robotnik.jfif', 'images/soup.jfif', 'images/nidd.jfif', 'images/iwanna.jfif',
+        'images/poke.jfif', 'images/poly.jfif', 'images/superm.jfif'
+    ];
+    var images_jeu_ingame = [
+        'images/smash1.jpg', 'images/hotline1.jpg', 'images/mario1.jpg', 'images/micro1.jfif',
+        'images/goldeneye1.jfif', 'images/towerfall1.jfif', 'images/simple1.png', 'images/street1.jfif',
+        'images/robotnik1.jfif', 'images/soup1.jfif', 'images/nidd1.jfif', 'images/iwanna1.jfif',
+        'images/poke1.jfif', 'images/poly1.jfif', 'images/superm1.jfif'
     ];
     var titles = [
-        'Title for ime 1', 'Title for image 2', 'Title for image 3', 'Title for image 4',
-        'Title for image 5', 'Title for image 6', 'Title for image 7', 'Title for image 8',
-        'Title for image 9', 'Title for image 10', 'Title for image 11', 'Title for image 12',
-        'Title for image 13', 'Title for image 14', 'Title for image 15'
+        'Smash Bros Ultimate', 'Hotline Miami 2', 'Mario kart 64', 'Micromachine 2',
+        'Goldeneye 64', 'TowerFall Ascension', 'Tron', 'Street fighter 2',
+        'Dr Robotnik Beam Machine', 'Game soup', 'Niddhog 2', 'I wanna be the guy',
+        'Pokemon bleue', 'Polybridge', 'Super Meat Boy'
     ];
     var rules = [
-        '<section>Rule for igrgrgmage 1</section>', '<section>Rule for image 2</section>',
-        '<section>Rule for image 3</section>', '<section>Rule for image 4</section>',
-        '<section>Rule for image 5</section>', '<section>Rule for image 6</section>',
-        '<section>Rule for image 7</section>', '<section>Rule for image 8</section>',
-        '<section>Rule for image 9</section>', '<section>Rule for image 10</section>',
-        '<section>Rule for image 11</section>', '<section>Rule for image 12</section>',
-        '<section>Rule for image 13</section>', '<section>Rule for image 14</section>',
-        '<section>Rule for image 15</section>'
+        '<section><p> - Fight 2 Versus 2</p><p> - Bo3</p><p> - 4 vies</p><p> - full objets</p><p> - Niveau choisit par la chèvre</p></section>',
+        '<section><p> - Race Speedrun 1 Versus 1 </p><p> - 1er au niveau ???</p></section>',
+        '<section><p> - Race 1 Versus 1 </p><p> - Bo3</p><p> - 150 cc</p><p> - 1 course avec bot</p><p> - Niveau choisit par la chèvre</p></section>',
+        '<section><p> - Race 1 Versus 1 </p><p> - Bo3</p><p> - Niveau choisit par la chèvre</p></section>',
+        '<section><p> - Death match 1 Versus 1 </p><p> - Bo3</p><p> - Golden gun only</p><p> - Nain obligatoire</p><p> - Niveau choisit par la chèvre</p></section>',
+        '<section><p> - Death match 2 Versus 2 </p><p> - 5 / 10 points gagnants</p><p> - Niveau choisit par la chèvre</p><p> La brume ça tue</p></section>',
+        '<section><p> - Match 1 Versus 1 </p><p> - Bo3</p></section>',
+        '<section><p> - Fight 1 Versus 1 </p><p> - Bo3 de Bo3</p></section>',
+        '<section><p> - Match 1 Versus 1 </p><p> - Bo3</p><p> - Difficulté normale</p></section>',
+        '<section><p> - Run 1 Versus 1</p><p> - Last man standing</p><p> - Une seule partie</p></section>',
+        '<section><p> - Fight 1 Versus 1</p><p> - Bo3</p></section>',
+        '<section><p> - Race 1 Versus 1</p><p> - 1er à atteindre le Boss du niveau 1</p></section>',
+        '<section><p> - Race 1 Versus 1</p><p> - Save préparée</p><p> - 1er à avoir 4 pokemon dans sa team</p></section>',
+        '<section><p> - Race 1 Versus 1</p><p> - 1er à finir le niveau ???</p></section>',
+        '<section><p> - Race 1 Versus 1</p><p> - 1er à atteindre le niveau ???</p></section>'
     ];
 
     var imgIndex = 0;
@@ -74,6 +87,7 @@ $(document).ready(function() {
         var index = $(this).data('index');
         $('#modalTitle').text(titles[index - 1]);
         $('#modalImage').attr('src', images_jeu[index - 1]);
+        $('#modalImageIngame').attr('src', images_jeu_ingame[index - 1]);
         $('#modalRules').html(rules[index - 1]);
         modal.show();
     });
