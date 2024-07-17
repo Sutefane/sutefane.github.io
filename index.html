@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web App</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1>The Goat Tournament</h1>
+<div class="container">
+    <table id="imageTable">
+        <tbody>
+        <!-- The table will be filled by jQuery -->
+        </tbody>
+    </table>
+    <div id="linksContainer">
+        <!-- Links will be filled by jQuery -->
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <img id="modalImage" src="" alt="">
+        <p id="modalRules">These are the rules for the image displayed above.</p>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
