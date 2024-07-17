@@ -80,8 +80,9 @@ img {
 }
 
 img:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     border-color: #81a2be;
+    z-index: 9999;
 }
 
 #linksContainer {
@@ -113,7 +114,7 @@ img:hover {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
+    padding-top: 30px;
     left: 0;
     top: 0;
     width: 100%;
@@ -129,20 +130,28 @@ img:hover {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    max-width: 500px;
+    max-width: 800px;
     text-align: center;
     color: #c5c8c6;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
+h2{
+    font-size: 48px;
+}
+section {
+    font-size: 30px;
+}
 .close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
-
+.modal-content img{
+    width: 380px;
+    height: 300px;
+}
 .close:hover,
 .close:focus {
     color: white;
